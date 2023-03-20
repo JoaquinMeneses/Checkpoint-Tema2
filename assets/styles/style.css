@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: DodgerBlue;
+    max-width: 100vw;
+    min-height: 10vh;
+    padding: 1rem;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.logo{
+    color: white;
+}
+.logo span{
+    color: black;
+}
+/* Main */
+body{
+    background-image: url(../images/image-2.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100vw;
+}
+main{
+    max-width: 100vw;
+}
+h1{
+    margin: 1rem;
+}
+.contenedor1{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.portada1{
+    width: 70vw;
+}
+.lista{
+    background-color: LightSkyBlue;
+    min-width: 60vw;
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.columna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-columna{
+    width: 40vw;
+}
+.h2{
+    margin-bottom: 1rem;
+}
+
+.titulo-contenedor2{
+    text-align: center;
+    background-color: LightSkyBlue;
+    padding: 1rem;
+}
+.contenedor2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: LightSkyBlue;
+    padding: 1rem;
+}
+.portada2{
+    height: 60vh;
+}
+.tabla {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+table {
+    text-align: center;
+    height: 60vh;
+    min-width: 40vw;
+}
+table, tr, th, td {
+    color: black;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+thead {
+    background-color: DodgerBlue;  
+}
+tbody {
+    background-color: rgba(255, 255, 255, 0.384);
+}
+/* Footer */
+footer{
+    background-color: DodgerBlue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+footer span{
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+/* Media Queries */
+@media only screen and (max-width: 767px){
+    main{
+        min-width: 139vw;
+    }
+    header{
+        flex-direction: column-reverse;
+        min-width: 139vw;
+    }
+    .img-columna{
+        width: 70vw;
+    }
+    .contenedor2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .portada2{
+        height: 50vh;
+        width: 70vw;
+    }
+    footer{
+        min-width: 139vw;
+        flex-direction: column;
+    }
+    footer p,form,a{
+        padding: 0.5rem;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .contenedor2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .portada2{
+        width: 40vh;
+    }
+}
